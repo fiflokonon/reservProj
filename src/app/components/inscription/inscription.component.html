@@ -1,0 +1,67 @@
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="#" style="color: white; font-size: 20px; font-weight: bold;">PlanningClassroom</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav" id="NavLinks">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html" style="color: white; font-size: 16px;">Accueil</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="inscription.html" style="color: white; font-size: 16px;">Inscription</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="connexion.html" style="color: white; font-size: 16px;">Connexion</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a style="color: white; font-size: 16px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					DOSSOU Ariel
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item" href="#" id="slink">Profil</a>
+					<a class="dropdown-item" href="#" id="slink">Déconnexion</a>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+    <div class="container mt-5" id="footFAQ">
+        <div class="row">
+            <div class="col-lg-7 col-lg-offset-2 card container">
+              <div class="card-header" style="text-align: center; font-size: 20px; color: black; font-weight: 900; background-color: rgb(93, 90, 121);">
+                INSCRIPTION 
+              </div>
+              <div class="card-body">
+                <form action="inscription" method="POST">
+                    <div class="form-group">
+                        <input type="hidden" name="situation" class="form-control mt-2"value="0">
+                        <input type="text" formControlName="lastName" class="form-control mt-2" placeholder="Entrez votre nom...">
+                        <input type="text" formControlName="firstName" class="form-control mt-2" placeholder="Entrer votre prénom...">
+						<input type="text" formControlName="username" class="form-control mt-2" placeholder="Entrez votre nom d'utilisateur...">
+                        <input type="email" formControlName="email" id="email" class="form-control mt-2" placeholder="Entrer votre email...">
+                        <input type="text" formControlName="matricule" class="form-control mt-2" placeholder="Entrer votre numéro matricule">
+                        <input type="password" formControlName="password" class="form-control mt-2" placeholder="Entrer votre mot de passe">
+						<input type="password" formControlName="password" class="form-control mt-2" placeholder="Confirmer votre mot de passe">
+						<select formControlName="sexe" id="sexe" class="form-control mt-2">
+							<option value="0" disabled>Selectionner votre sexe</option>
+							<option value="Masculin">Masculin</option>
+							<option value="Feminin">Feminin</option>
+						</select> 
+						<select formControlName="grade" id="sexe" class="form-control mt-2">
+							<option value="0" disabled>Selectionner votre grade</option>
+							<option value="Masculin">Enseignant</option>
+							<option value="Feminin">Etudiant</option>
+						</select> 
+						<br>
+                        <button class="btn btn-primary form-control" style="background-color: rgb(93, 90, 121);">S'inscrire</button>
+                        <h6 style="text-align: center;" class="mt-2"> <a href="#" id="compteLink">Vous avez un compte ?</a> </h6>
+                    </div>
+                </form>
+          </div>
+        </div> 
+    </div>
+    </div>
+</body>
