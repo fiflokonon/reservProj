@@ -7,12 +7,13 @@ import { User } from '../models/user';
 })
 export class UserService {
 tok: any;
-private readonly API_URL = `/api`;
+private readonly API_URL = `https://planningclassroom.herokuapp.com/api`;
 
   constructor(private http: HttpClient) { }
 
   signup(user: User)
   {
+    console.log(user);
     const url = `${this.API_URL}/auth/signup`;
     return this.http.post(url, user);
   }

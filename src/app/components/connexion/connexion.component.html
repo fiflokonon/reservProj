@@ -8,13 +8,13 @@
 			<ul class="navbar-nav" id="NavLinks">
 
 				<li class="nav-item">
-					<a class="nav-link" href="index.html" style="color: white; font-size: 16px;">Accueil</a>
+					<a class="nav-link" href="#" style="color: white; font-size: 16px;">Accueil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="inscription.html" style="color: white; font-size: 16px;"><span>Inscription</span> </a>
+					<a class="nav-link" href="/inscription" style="color: white; font-size: 16px;"><span>Inscription</span> </a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="connexion.html" style="color: white; font-size: 16px;">Connexion</a>
+					<a class="nav-link" href="/connexion" style="color: white; font-size: 16px;">Connexion</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a style="color: white; font-size: 16px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,12 +37,12 @@
                 CONNEXION 
               </div>
               <div class="card-body">
-                <form action="connexion" method="POST">
+                <form action="connexion" [formGroup]="authForm" (ngSubmit)="connexion()">
                     <div class="form-group">
                         <input value="" formControlName="userNemail" type="text" placeholder="Nom d'utilisateur ou email" class="form-control mt-4 mb-4">
                          <input value="" formControlName="password" type="password" placeholder="Password ..." class="form-control mt-4 mb-4">
                         <button type="submit" class="btn mt-4 mb-1 form-control text-light" type="submit" style="background-color: rgb(93, 90, 121);">Envoyer</button>
-						<h6 style="text-align: center;" class="mt-2"> <a href="#" id="compteLink">Vous n'avez pas de compte ?</a> </h6>
+						<h6 style="text-align: center;" class="mt-2"> <a href="/inscription" id="compteLink">Vous n'avez pas de compte ?</a> </h6>
 					</div>
                 </form>
           </div>

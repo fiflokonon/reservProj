@@ -7,13 +7,13 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav" id="NavLinks">
 				<li class="nav-item">
-					<a class="nav-link" href="index.html" style="color: white; font-size: 16px;">Accueil</a>
+					<a class="nav-link" href="#" style="color: white; font-size: 16px;">Accueil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="inscription.html" style="color: white; font-size: 16px;">Inscription</a>
+					<a class="nav-link" href="/inscription" style="color: white; font-size: 16px;">Inscription</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="connexion.html" style="color: white; font-size: 16px;">Connexion</a>
+					<a class="nav-link" href="/connexion" style="color: white; font-size: 16px;">Connexion</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a style="color: white; font-size: 16px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,6 +43,7 @@
 						<input type="text" formControlName="userName" class="form-control mt-2" placeholder="Entrez votre nom d'utilisateur...">
                         <input type="email" formControlName="email" id="email" class="form-control mt-2" placeholder="Entrer votre email...">
                         <input type="text" formControlName="matricule" class="form-control mt-2" placeholder="Entrer votre numéro matricule">
+						<input type="text" formControlName="numero" class="form-control mt-2" placeholder="Entrer votre numéro de téléphone">
 						<select formControlName="sexe" id="sexe" class="form-control mt-2">
 							<option value="0" selected disabled>Selectionner votre sexe</option>
 							<option value="Masculin">Masculin</option>
@@ -50,8 +51,8 @@
 						</select> 
 						<select formControlName="type" id="sexe" class="form-control mt-2">
 							<option value="0" selected disabled>Selectionner votre grade</option>
-							<option value="Masculin">Enseignant</option>
-							<option value="Feminin">Etudiant</option>
+							<option value="ENSEIGNANT">Enseignant</option>
+							<option value="ETUDIANT">Etudiant</option>
 						</select> 
                         <input type="password" formControlName="password" class="form-control mt-2" placeholder="Entrer votre mot de passe">
 						<input type="password" formControlName="cpassword" class="form-control mt-2" placeholder="Confirmer votre mot de passe">

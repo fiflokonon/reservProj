@@ -22,11 +22,12 @@ export class InscriptionComponent implements OnInit {
       {
         this.user.firstName = this.inscripForm.get('firstName').value;
         this.user.lastName = this.inscripForm.get('lastName').value;
-        this.user.userName = this.inscripForm.get('userName').value;
+        this.user.username = this.inscripForm.get('userName').value;
         this.user.email = this.inscripForm.get('email').value;
         this.user.noMatricule = this.inscripForm.get('matricule').value;
+        this.user.number = this.inscripForm.get('numero').value;
         this.user.sexe = this.inscripForm.get('sexe').value;
-        this.user.type = this.inscripForm.get('type').value;
+        this.user.userType = this.inscripForm.get('type').value;
         this.user.password = this.inscripForm.get('password').value;
         this.service.signup(this.user).toPromise()
         .then(()=>{
@@ -51,6 +52,7 @@ export class InscriptionComponent implements OnInit {
       userName: new FormControl(),
       email: new FormControl(),
       matricule: new FormControl(),
+      numero: new FormControl(),
       sexe: new FormControl(),
       type: new FormControl(),
       password: new FormControl(),

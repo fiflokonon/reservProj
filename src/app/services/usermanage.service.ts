@@ -8,7 +8,7 @@ import { User } from '../models/user';
 })
 export class UsermanageService {
 
-private readonly URL_API = `/api`;
+private readonly URL_API = `https://planningclassroom.herokuapp.com/api`;
 
 constructor(private http:HttpClient) { }
 

@@ -9,6 +9,9 @@ import { ConnexionComponent } from './components/connexion/connexion.component';
 import { InscriptionComponent } from './components/inscription/inscription.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ClassmanageComponent } from './components/classmanage/classmanage.component';
+import { UsermanageComponent } from './components/usermanage/usermanage.component';
+import { TeachermanageComponent } from './components/teachermanage/teachermanage.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     IndexComponent,
     ConnexionComponent,
     InscriptionComponent,
-    DashboardComponent
+    DashboardComponent,
+    ClassmanageComponent,
+    UsermanageComponent,
+    TeachermanageComponent
   ],
   imports: [
     BrowserModule,
