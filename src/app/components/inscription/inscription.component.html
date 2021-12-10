@@ -35,28 +35,28 @@
                 INSCRIPTION 
               </div>
               <div class="card-body">
-                <form action="inscription" method="POST">
+                <form action="inscription" [formGroup]="inscripForm" (ngSubmit)="inscript()">
                     <div class="form-group">
                         <input type="hidden" name="situation" class="form-control mt-2"value="0">
                         <input type="text" formControlName="lastName" class="form-control mt-2" placeholder="Entrez votre nom...">
                         <input type="text" formControlName="firstName" class="form-control mt-2" placeholder="Entrer votre prénom...">
-						<input type="text" formControlName="username" class="form-control mt-2" placeholder="Entrez votre nom d'utilisateur...">
+						<input type="text" formControlName="userName" class="form-control mt-2" placeholder="Entrez votre nom d'utilisateur...">
                         <input type="email" formControlName="email" id="email" class="form-control mt-2" placeholder="Entrer votre email...">
                         <input type="text" formControlName="matricule" class="form-control mt-2" placeholder="Entrer votre numéro matricule">
-                        <input type="password" formControlName="password" class="form-control mt-2" placeholder="Entrer votre mot de passe">
-						<input type="password" formControlName="password" class="form-control mt-2" placeholder="Confirmer votre mot de passe">
 						<select formControlName="sexe" id="sexe" class="form-control mt-2">
-							<option value="0" disabled>Selectionner votre sexe</option>
+							<option value="0" selected disabled>Selectionner votre sexe</option>
 							<option value="Masculin">Masculin</option>
 							<option value="Feminin">Feminin</option>
 						</select> 
-						<select formControlName="grade" id="sexe" class="form-control mt-2">
-							<option value="0" disabled>Selectionner votre grade</option>
+						<select formControlName="type" id="sexe" class="form-control mt-2">
+							<option value="0" selected disabled>Selectionner votre grade</option>
 							<option value="Masculin">Enseignant</option>
 							<option value="Feminin">Etudiant</option>
 						</select> 
+                        <input type="password" formControlName="password" class="form-control mt-2" placeholder="Entrer votre mot de passe">
+						<input type="password" formControlName="cpassword" class="form-control mt-2" placeholder="Confirmer votre mot de passe">
 						<br>
-                        <button class="btn btn-primary form-control" style="background-color: rgb(93, 90, 121);">S'inscrire</button>
+                        <button type="submit" class="btn btn-primary form-control" style="background-color: rgb(93, 90, 121);">S'inscrire</button>
                         <h6 style="text-align: center;" class="mt-2"> <a href="#" id="compteLink">Vous avez un compte ?</a> </h6>
                     </div>
                 </form>

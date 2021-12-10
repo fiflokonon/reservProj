@@ -39,9 +39,9 @@
               <div class="card-body">
                 <form action="connexion" method="POST">
                     <div class="form-group">
-                        <input value="" name="username" type="text" placeholder="Username ..." class="form-control mt-4 mb-4">
-                         <input value="" name="password" type="password" placeholder="Password ..." class="form-control mt-4 mb-4">
-                        <button name="submit" class="btn mt-4 mb-1 form-control text-light" type="submit" style="background-color: rgb(93, 90, 121);">Envoyer</button>
+                        <input value="" formControlName="userNemail" type="text" placeholder="Nom d'utilisateur ou email" class="form-control mt-4 mb-4">
+                         <input value="" formControlName="password" type="password" placeholder="Password ..." class="form-control mt-4 mb-4">
+                        <button type="submit" class="btn mt-4 mb-1 form-control text-light" type="submit" style="background-color: rgb(93, 90, 121);">Envoyer</button>
 						<h6 style="text-align: center;" class="mt-2"> <a href="#" id="compteLink">Vous n'avez pas de compte ?</a> </h6>
 					</div>
                 </form>
