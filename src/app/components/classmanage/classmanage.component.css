@@ -1,0 +1,21 @@
+tbody
+{
+    background-color: antiquewhite;
+}
+table
+{
+    margin-top: -110px;
+    margin-left: 220px;
+}
+aside
+{
+    width: 210px;
+    height: 170px;
+    background-color: #B4754C;
+}
+.add
+{
+    position:absolute;
+    margin-left: 1120px;
+    margin-top: -150px;
+}

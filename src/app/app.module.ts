@@ -12,6 +12,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ClassmanageComponent } from './components/classmanage/classmanage.component';
 import { UsermanageComponent } from './components/usermanage/usermanage.component';
 import { TeachermanageComponent } from './components/teachermanage/teachermanage.component';
+import { ClasslistComponent } from './components/classlist/classlist.component';
+import { DashteacherComponent } from './components/dashteacher/dashteacher.component';
+import { AddclassComponent } from './components/addclass/addclass.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import { TeachermanageComponent } from './components/teachermanage/teachermanage
     DashboardComponent,
     ClassmanageComponent,
     UsermanageComponent,
-    TeachermanageComponent
+    TeachermanageComponent,
+    ClasslistComponent,
+    DashteacherComponent,
+    AddclassComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class ConnexionComponent implements OnInit {
 data : any = {};
 token: any;
 authForm : FormGroup|any;
-  constructor(private service: UserService) { }
+  constructor(private service: UserService, private route: Router) { }
 
   connexion()
   {
@@ -24,6 +25,7 @@ authForm : FormGroup|any;
         console.log(response);
         this.token = response;
         localStorage['head'] = JSON.stringify(this.token);
+        this.route.navigate(['/dashteacher']);
       })
     }
     else 
