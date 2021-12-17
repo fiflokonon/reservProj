@@ -25,7 +25,12 @@ export class ClassroomService {
   addClassroom(data: Classroom)
   {
     const url = `${this.URL_API}/classroom`;
-    return this.http.post(url, data);
+    const headers = {
+      "Authorization": `Bearer ${localStorage.getItem('token')}`
+    }
+    return this.http.post(url, data, {
+      headers
+    });
   }
 
   updateClassroom(id: number, data: Classroom)
